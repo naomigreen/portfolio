@@ -321,7 +321,7 @@ export const bubbleInfo = 'Bubble chart';
 export const socialData = [
   { image: linkedinLogo, link: 'https://www.linkedin.com/in/naomi-presod-green-3299868a/' },
   { image: githubLogo, link: 'https://github.com/naomigreen' },
-  { image: codeIcon, link: 'https://github.com/naomigreen/portfolio.2' },
+  { image: codeIcon, link: 'https://github.com/naomigreen/portfolio' },
 ];
 
 export const workData = [
