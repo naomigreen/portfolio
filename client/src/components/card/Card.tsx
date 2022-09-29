@@ -27,9 +27,9 @@ const CardContainer = styled.div`{
 }`
 const TextContainer = styled(ReactMarkdown)`
   padding: 20px;
-  width: 800px;
+  width: calc(95% - 40px);
   margin: 0 auto;
-  max-width: 95%;
+  max-width: 800px;
 
   li {
     list-style-type: none;
