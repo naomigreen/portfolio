@@ -9,11 +9,13 @@ export { default as tickIcon } from './tick.png';
 
 // logos
 // dark themed logos
+export { default as virginLogoDark } from './logos/virginDark.png';
 export { default as clearmaticsLogoDark } from './logos/clearmaticsDark.png';
 export { default as timesLogoDark } from './logos/timesDark.png';
 export { default as hackneyLogoDark } from './logos/hackneyDark.png';
 
 // light themed logos
+export { default as virginLogoLight } from './logos/virgin.png';
 export { default as clearmaticsLogoLight } from './logos/clearmaticsLight.png';
 export { default as timesLogoLight } from './logos/timesLight.png';
 export { default as hackneyLogoLight } from './logos/hackneyLight.png';

@@ -17,8 +17,8 @@ const RouteContainer = () => {
     <Router>
       <Nav />
       <Routes>
-        {links.map((link) => (
-          <Route key={link.name} path={link.route} element={<link.element theme={theme} />} />
+        {links.map(({ name, route, Element }) => (
+          <Route key={name} path={route} element={<Element theme={theme} />} />
         ))}
         <Route path='*' element={<NotFound />} />
       </Routes>

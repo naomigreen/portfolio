@@ -15,7 +15,7 @@ const Main = styled.div`
   background: ${props => props.theme.secondary};
   padding: 100px 3% 0 ;
   margin: 150px auto 0;
-  max-width: 85%;
+  max-width: 90%;
   width: 1000px;
   min-height: 100vh;
   color: ${props => props.theme.text};

@@ -20,9 +20,9 @@ const Home = (theme: HomeProps) => {
 
   return (
     <Content>
-      <Image image={desk} width='100%' />
+      <Image image={desk} width='800px' maxWidth='100%' borderRadius='10px' />
       {workData.map((d, i) => (
-        <Card key={d.link} logo={getLogo(d.logo, d.lightLogo)} width={d.width} maxWidth={d.maxWidth} link={d.link} text={d.text} divider={i === 9 ? false : true} />
+        <Card key={d.link} logo={getLogo(d.logo, d.lightLogo)} width={d.width} maxWidth={d.maxWidth} link={d.link} text={d.text} divider={d.divider} />
       ))}
     </Content>
   )

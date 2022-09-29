@@ -57,7 +57,6 @@ const Img = styled.img<{ opacity: string }>`
 	transition: all 0.9s ease;
 	width: 35px;
 	max-width: 33%;
-	border-radius: 100%;
 	opacity: ${(props) => props.opacity};
 	padding: 0 0 10px;
 	display: block;

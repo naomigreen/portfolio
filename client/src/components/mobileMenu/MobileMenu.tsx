@@ -17,15 +17,15 @@ const MobileMenu = ({ theme, handleClick }: MobileMenuProps) => {
   return (
     <MenuContainer menuClassName='menu-container' customCrossIcon={<img src={crossIcon} alt='' />} crossClassName='cross' styles={defaultStyles} isOpen={isOpen}>
       <ul>
-        {links.map((link) => (
-          <Link key={link.name} to={link.route}>{link.name}</Link>
+        {links.map(({ name, route }) => (
+          <Link key={name} to={route}>{name}</Link>
         ))}
       </ul>
       <Content>
         <ThemeText>Themes</ThemeText>
         <Controls>
-          {themeData.map((data: themeDataType) => (
-            <ThemeControl key={data.name} icon={data.icon} theme={data.name} activeTheme={theme} handleClick={handleClick} />
+          {themeData.map(({ name, icon }: themeDataType) => (
+            <ThemeControl key={name} icon={icon} theme={name} activeTheme={theme} handleClick={handleClick} />
           ))}
         </Controls>
       </Content>

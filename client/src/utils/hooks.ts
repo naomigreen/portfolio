@@ -11,14 +11,17 @@ export const DataContext = createContext({
 
 export const useFetch = (url: string, initialValue: []) => {
   const [data, setData] = useState(initialValue);
+  const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(url);
       setData(result.data);
+      setLoading(false);
     };
     try {
+      setLoading(true);
       fetchData();
     } catch (e: any) {
       setErrorMsg(e.message);
@@ -28,5 +31,5 @@ export const useFetch = (url: string, initialValue: []) => {
     console.log(errorMsg);
   }
 
-  return data;
+  return { data, errorMsg, loading };
 };

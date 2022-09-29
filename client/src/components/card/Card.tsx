@@ -9,22 +9,25 @@ type CardProps = {
   maxWidth: string
   link: string
   text: any
-  divider: boolean
+  divider?: boolean
 }
 
 const Card = ({ logo, width, maxWidth, link, text, divider = true }: CardProps) => (
-  <div>
+  <CardContainer>
     <Image link={link} width={width} maxWidth={maxWidth} image={logo} />
     <TextContainer rehypePlugins={[rehypeRaw]} >
       {text}
     </TextContainer>
     {divider && <hr />}
-  </div>
+  </CardContainer>
 )
 
+const CardContainer = styled.div`{
+  margin: 60px auto
+}`
 const TextContainer = styled(ReactMarkdown)`
   padding: 20px;
-  width: 700px;
+  width: 800px;
   margin: 0 auto;
   max-width: 95%;
 

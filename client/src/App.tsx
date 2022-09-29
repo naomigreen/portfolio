@@ -6,13 +6,15 @@ import { themes, savedTheme, OSTheme } from './utils/theme/theme';
 import Routes from './containers/routes/Routes';
 
 const App = () => {
-  const gdpData = useFetch('/api/data/gdp', []);
-  const houseData = useFetch('/api/data/houses', []);
+  //TODO Update demo data?
+
+  // const { data: gdpData } = useFetch('/api/data/gdp', []);
+  // const { data: houseData } = useFetch('/api/data/houses', []);
   const [theme, setTheme] = useState(savedTheme ? savedTheme : OSTheme);
 
   return (
     <ThemeProvider theme={themes[theme]}>
-      <DataContext.Provider value={{ gdpData, houseData, theme, setTheme } as any}>
+      <DataContext.Provider value={{ theme, setTheme } as any}>
         <Main>
           <Video
             autoPlay

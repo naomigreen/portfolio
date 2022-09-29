@@ -16,13 +16,15 @@ import {
   githubLogo,
   linkedinLogo,
   codeIcon,
+  virginLogoDark,
+  virginLogoLight,
 } from '../assets/images';
 
 export const links = [
-  { name: 'Home', route: '/', element: Home },
-  { name: 'Demo', route: 'demo', element: Demo },
-  { name: 'Tech Tests', route: 'tech-tests', element: TechTest },
-  { name: 'Contact', route: 'contact', element: Contact },
+  { name: 'Home', route: '/', Element: Home },
+  // { name: 'Demo', route: 'demo', Element: Demo },
+  // { name: 'Tech Tests', route: 'tech-tests', Element: TechTest },
+  { name: 'Contact', route: 'contact', Element: Contact },
 ];
 
 export const home = `
@@ -30,6 +32,28 @@ export const home = `
   I have a Computer Science background and specialise in React, Vanilla and Node JavaScript. <br /> 
   I enjoy working on complex projects that test my skills and teach me new approaches to software 
   development.`;
+
+const virgin = `
+  <u>Technology</u> 
+  * React
+  * React Hooks
+  * Vanilla JavaScript
+  * AEM
+  * JQuery  
+  * JSX
+  * JSON
+  * Jest
+  * Storybook
+  * Jenkins
+
+  <u>Role</u>
+  * Creating new components
+  * Code reviews
+  * Unit tests
+  * Code refactoring
+  * Site redesign
+
+This role is a full redesign of flight pre-order system. Working with the designers to change the look and functionality of the legacy application. We also aim to create a new React application to replace it.`;
 
 const bbc = `
   <u>Technology</u> 
@@ -295,12 +319,20 @@ therefore I've decided to demonstrate my passion for data visualisation using D3
 export const bubbleInfo = 'Bubble chart';
 
 export const socialData = [
-  { image: linkedinLogo, link: 'https://www.linkedin.com/in/naomi-prescod-green-3299868a/' },
+  { image: linkedinLogo, link: 'https://www.linkedin.com/in/naomi-presod-green-3299868a/' },
   { image: githubLogo, link: 'https://github.com/naomigreen' },
-  { image: codeIcon, link: 'https://github.com/naomigreen/portfolio' },
+  { image: codeIcon, link: 'https://github.com/naomigreen/portfolio.2' },
 ];
 
 export const workData = [
+  {
+    text: virgin,
+    logo: virginLogoDark,
+    lightLogo: virginLogoLight,
+    link: 'https://corporate.virginatlantic.com/gb/en/our-story.html',
+    width: '350px',
+    maxWidth: '50%',
+  },
   { text: bbc, logo: bbcLogo, link: 'https://www.bbc.co.uk/aboutthebbc', width: '250px', maxWidth: '50%' },
   { text: dazn, logo: daznLogo, link: 'https://dazngroup.com/about-us/', width: '250px', maxWidth: '40%' },
   { text: intrepid, logo: intrepidLogo, link: 'https://www.beintrepid.co.uk/', width: '250px', maxWidth: '50%' },
@@ -331,5 +363,6 @@ export const workData = [
     link: 'https://www.news.co.uk/what-we-do/',
     width: '250px',
     maxWidth: '50%',
+    divider: false,
   },
 ];

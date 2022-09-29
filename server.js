@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const enforce = require('express-sslify');
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 4000;
 const houseData = require('./data/houses.json');
 const gdpData = require('./data/gdp.json');
 
