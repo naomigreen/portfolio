@@ -33,7 +33,7 @@ export const links = [
 export const intro = `
   I’m Naomi Prescod-Green, a JavaScript Contractor and founder of Codes Green Ltd. <br/> 
   I have a Computer Science background and specialise in React, TypeScript, Vanilla and Node JavaScript. <br /> 
-  When I'm not coding, I enjoy gaming, cycling and trying to still updated with all `;
+  When I'm not coding, I enjoy gaming and cycling. `;
 
 const virgin = `
   <u>Technology</u> 
