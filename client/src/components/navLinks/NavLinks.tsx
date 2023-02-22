@@ -21,13 +21,13 @@ const Nav = styled.ul`
   margin: 0 auto;
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 `;
 
 const LinkList = styled.li`
 margin: 0 5px;
 .active {
-  border-color: ${props => props.theme.underline};
+  color: ${props => props.theme.active};
 }
 `;
 
@@ -44,7 +44,7 @@ const Link = styled(NavLink)`
   position: relative;
   width: 100%;
   :hover {
-    border-color: ${props => props.theme.underline};
+    color: ${props => props.theme.hover};
   }
 `;
 export default Links

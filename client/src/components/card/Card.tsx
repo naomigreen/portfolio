@@ -2,19 +2,22 @@ import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
 import rehypeRaw from 'rehype-raw'
 import Image from '../image/Image';
+import Video from '../video/Video';
 
 type CardProps = {
-  logo: string
+  imageSrc?: string
+  videoSrc?: string
   width: string
-  maxWidth: string
-  link: string
-  text: any
+  maxWidth?: string
+  link?: string
+  text: string
   divider?: boolean
 }
 
-const Card = ({ logo, width, maxWidth, link, text, divider = true }: CardProps) => (
+const Card = ({ imageSrc, videoSrc, width, maxWidth = "100%", link, text, divider = true }: CardProps) => (
   <CardContainer>
-    <Image link={link} width={width} maxWidth={maxWidth} image={logo} />
+    {imageSrc && <Image link={link} width={width} maxWidth={maxWidth} image={imageSrc} />}
+    {videoSrc && <Video src={videoSrc} />}
     <TextContainer rehypePlugins={[rehypeRaw]} >
       {text}
     </TextContainer>
@@ -22,9 +25,9 @@ const Card = ({ logo, width, maxWidth, link, text, divider = true }: CardProps) 
   </CardContainer>
 )
 
-const CardContainer = styled.div`{
+const CardContainer = styled.div`
   margin: 60px auto
-}`
+`
 const TextContainer = styled(ReactMarkdown)`
   padding: 20px;
   width: calc(95% - 40px);

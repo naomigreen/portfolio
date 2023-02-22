@@ -33,3 +33,8 @@ export { default as githubLogo } from './logos/github.png';
 export { default as logo } from './logos/logo.png';
 
 export { default as desk } from './desk.png';
+export { default as me } from './me.jpg';
+
+// Tests
+export { default as holiday } from './holiday-test.png';
+export { default as business } from './business-test.png';

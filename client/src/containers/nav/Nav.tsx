@@ -96,7 +96,7 @@ margin: 0 auto;
 position: fixed;
 z-index: 3;
 background: ${props => props.theme.navColor};
-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.45);
+box-shadow: 0px 1px 5px 0px ${props => props.theme.shadow};
 transition: top 0.4s ease-out;
 `
 const Controls = styled.div`
@@ -106,7 +106,7 @@ const Controls = styled.div`
 .active-theme{
   width: 25px;
   filter: grayscale(0);
-  border-color: ${props => props.theme.underline};
+  color: ${props => props.theme.active};
 }
 `
 

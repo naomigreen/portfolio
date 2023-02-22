@@ -18,33 +18,36 @@ import {
   codeIcon,
   virginLogoDark,
   virginLogoLight,
+  business,
+  holiday,
 } from '../assets/images';
 
 export const links = [
   { name: 'Home', route: '/', Element: Home },
+  // TODO update to latest version of d3
   // { name: 'Demo', route: 'demo', Element: Demo },
-  // { name: 'Tech Tests', route: 'tech-tests', Element: TechTest },
+  { name: 'Tech Tests', route: 'tech-tests', Element: TechTest },
   { name: 'Contact', route: 'contact', Element: Contact },
 ];
 
-export const home = `
-  I’m Naomi Prescod-Green, a Full Stack JavaScript Contractor and founder of Codes Green Ltd. <br/> 
-  I have a Computer Science background and specialise in React, Vanilla and Node JavaScript. <br /> 
-  I enjoy working on complex projects that test my skills and teach me new approaches to software 
-  development.`;
+export const intro = `
+  I’m Naomi Prescod-Green, a JavaScript Contractor and founder of Codes Green Ltd. <br/> 
+  I have a Computer Science background and specialise in React, TypeScript, Vanilla and Node JavaScript. <br /> 
+  When I'm not coding, I enjoy gaming, cycling and trying to still updated with all `;
 
 const virgin = `
   <u>Technology</u> 
   * React
   * React Hooks
   * Vanilla JavaScript
-  * AEM
   * JQuery  
   * JSX
   * JSON
   * Jest
   * Storybook
   * Jenkins
+  * AWS
+  * AEM (my day rate will include fees for a therapist if you use this)
 
   <u>Role</u>
   * Creating new components
@@ -53,7 +56,7 @@ const virgin = `
   * Code refactoring
   * Site redesign
 
-This role is a full redesign of flight pre-order system. Working with the designers to change the look and functionality of the legacy application. We also aim to create a new React application to replace it.`;
+This project is a full redesign of the flight pre-order system. I'm working with the designers to change the look and functionality of the legacy application. We also aim to create a new React application to replace it.`;
 
 const bbc = `
   <u>Technology</u> 
@@ -313,6 +316,28 @@ const times = `
   templates. This was a great role as it gave me a fundamental understanding of Vanilla JavaScript 
   without frameworks.`;
 
+const businessInfo = `
+<u>Task</u>
+
+  The data is a list of application records and is fetchable at /data. 
+  Each application has 3 levels of business capabilities. Business capabilities are hierarchical as shown in the image (Business capability 1 -> Business capability 2 -> Business capability 3) Important: Use the data file provided
+
+  The app should -
+  * Requests the dataset.
+  * Build a hierarchical navigation tree displaying the different levels of business capabilities. Bonus points if we can expand/collapse the navigation tree.
+  * Have a range slider to be able to further filter the dataset based on the total spending value
+  * Present a list of applications from the data set, showing name and total spend. The list depends on the navigation tree and the range filter`;
+
+const holidayInfo = `
+<u>Task</u>
+
+  Build the 'search results page' which connects to our holiday search API to display a list of holidays for a given location and departure date. Select what data items (example listed below) you think should be included on the page.
+  Add the ability to filter the results further by:
+
+  * Price per person
+  * Hotel facilities
+  * Star rating
+`;
 export const demo = `Unfortunately most of the projects I work on have non-disclosure agreements, 
 therefore I've decided to demonstrate my passion for data visualisation using D3.`;
 
@@ -364,5 +389,22 @@ export const workData = [
     width: '250px',
     maxWidth: '50%',
     divider: false,
+  },
+];
+
+export const techTestData = [
+  {
+    image: holiday,
+    info: holidayInfo,
+    title: 'Holiday Test',
+    link: 'https://github.com/naomigreen/v-tech-test',
+    video: 'https://naomi-assets.s3.eu-west-2.amazonaws.com/holiday.mp4',
+  },
+  {
+    image: business,
+    info: businessInfo,
+    title: 'Business Test',
+    link: 'https://github.com/naomigreen/business-test',
+    video: 'https://naomi-assets.s3.eu-west-2.amazonaws.com/business.mp4',
   },
 ];

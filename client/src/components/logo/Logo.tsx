@@ -13,7 +13,7 @@ const Company = styled.h2`
   top: 5px;
   margin: 0;
   padding: 0;
-  background: -webkit-linear-gradient(#00cecc, #286d0d);
+  background: ${props => props.theme.companyLogo};
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @media (max-width: 912px) {

@@ -112,15 +112,15 @@ const Controls = styled.div`
 .active-theme{
   width: 40px;
   filter: grayscale(0);
-  border-color: ${props => props.theme.underline};
+  color: ${props => props.theme.active};
 }
 .theme-icon{
   width: 40px;
 }
 `
 const Content = styled.div`
-display: flex;
-justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 `;
 
 export default MobileMenu;

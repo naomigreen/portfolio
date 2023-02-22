@@ -43,13 +43,12 @@ const Button = styled.button`
   padding: 10px;
   border: 1px solid ${props => props.theme.border};
   border-radius: 5px;
-  color: ${props => props.theme.text};
+  color: #000;
   font-weight: 900;
-  background: ${props => props.theme.input};
+  background: ${props => props.theme.buttons};
   font-size: 14px;
   :hover {
-    background: ${props => props.theme.buttons};
-    color: ${props => props.theme.hoverText};
+    background: ${props => props.theme.hover};
   }
 `;
 
@@ -71,6 +70,9 @@ const Links = styled.div`
     background: ${props => props.theme.buttons};
     border-radius: 100%;
     padding: 6px;
+    :hover{
+      background: ${props => props.theme.hover};
+    }
   }
 `;
 

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 type ImageProps = {
   image: string
+  hover?: boolean
   link?: string
   width?: string
   maxWidth?: string
@@ -17,7 +18,7 @@ type StyledProps = {
 const Image = ({ link, maxWidth = '100%', width = '50px', image, borderRadius = '0' }: ImageProps) => {
   if (link) {
     return (
-      <a href={link}>
+      <a href={link} target="_blank" rel="noopener noreferrer">
         <Img width={width} maxWidth={maxWidth} src={image} borderRadius={borderRadius} alt='' />
       </a>
     )

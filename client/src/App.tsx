@@ -22,9 +22,9 @@ const App = () => {
             playsInline
             preload="auto"
             muted
-            poster="https://website-background.s3.eu-west-2.amazonaws.com/video-image.png"
-            src="https://website-background.s3.eu-west-2.amazonaws.com/bg-compressed.mp4"
-          />
+            poster="https://website-background.s3.eu-west-2.amazonaws.com/video-image.png">
+            <source src="https://website-background.s3.eu-west-2.amazonaws.com/bg-compressed.mp4" type='video/mp4' />
+          </Video>
           <Routes />
         </Main>
       </DataContext.Provider>
@@ -37,6 +37,9 @@ const Video = styled.video`
 	height: 100%;
 	position: fixed;
 	object-fit: cover;
+  float: left;
+  top: 0;
+  padding: none;
 `
 
 const Main = styled.div`

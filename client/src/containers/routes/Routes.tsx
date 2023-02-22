@@ -6,7 +6,6 @@ import {
   Route,
 } from "react-router-dom";
 import Nav from '../nav/Nav';
-
 import { NotFound } from '../pages'
 import { links } from '../../data/data';
 

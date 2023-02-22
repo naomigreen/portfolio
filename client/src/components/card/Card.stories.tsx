@@ -20,7 +20,7 @@ Card description
 `
 export const Default = Template.bind({});
 Default.args = {
-  logo: logo,
+  imageSrc: logo,
   width: '400px',
   maxWidth: '100%',
   text: text,

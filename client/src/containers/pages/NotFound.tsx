@@ -1,28 +1,19 @@
 import { Link } from 'react-router-dom';
+import Content from '../../components/content/Content';
+import Image from '../../components/image/Image';
+
 import styled from 'styled-components';
 import genie from '../../assets/images/genie.gif';
 
 const NotFound = () => (
-  <ErrorContainer>
-    <ErrorImage src={genie} alt='' />
+  <Content>
+    <Image image={genie} width='800px' maxWidth='100%' />
     <ErrorText>Oh no, page not found! Please return to the <Link to='/'>home page</Link></ErrorText>
-  </ErrorContainer>
+  </Content>
 )
 
-const ErrorContainer = styled.div`
-width: 90vw;
-display: block;
-margin: 0 auto;
-text-align: center;
-`
-const ErrorImage = styled.img`
-max-width: 100%;
-width: 1000px;
-margin-top: 10vh;       
-`
-
 const ErrorText = styled.h2`
-font-size: 3vw;
+text-align: center;
 `
 
 export default NotFound
