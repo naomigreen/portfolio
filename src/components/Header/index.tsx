@@ -36,12 +36,14 @@ export const Header = () => {
         <MobileMenu />
         <Nav />
         <Logo />
-        <Styled.ThemeTool>
-          Themes
-          {themeData.map((data: themeDataType) => (
-            <ThemeControl key={data.name} icon={data.icon} themeName={data.name} />
-          ))}
-        </Styled.ThemeTool>
+        <Styled.ThemesContainer>
+          <span>Themes</span>
+          <div>
+            {themeData.map((data: themeDataType) => (
+              <ThemeControl key={data.name} icon={data.icon} themeName={data.name} />
+            ))}
+          </div>
+        </Styled.ThemesContainer>
       </Styled.HeaderContainer>
       <Styled.HeaderImage
         src={`/backgrounds/${theme}.jpg`}

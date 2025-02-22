@@ -35,12 +35,19 @@ export const HeaderContainer = styled.div<styleProps>`
     grid-template-columns: 6fr;
   }
 `
-
-export const ThemeTool = styled.div`
+export const ThemesContainer = styled.div`
   display: flex;
   justify-content: end;
   align-items: end;
+  flex-direction: column;
+  top: 6px;
+  position: relative;
+  span{
+    color: ${props => props.theme.navText};
+  }
+
   @media (max-width: ${MAX_TABLET}){
     display: none;
   }
 `
+
