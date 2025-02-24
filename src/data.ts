@@ -1,6 +1,4 @@
-import { Home } from './containers/pages';
-import { TechTest } from './containers/pages';
-import { Contact } from './containers/pages';
+import { Home, NotFound, TechTest, Contact } from './containers/pages';
 
 export const NavLinkData = [
   {
@@ -17,7 +15,7 @@ export const NavLinkData = [
   },
 ]
 
-export const links = [
+export const routePaths = [
   {
     name: 'Home',
     route: '/',
@@ -32,6 +30,11 @@ export const links = [
     name: 'Contact',
     route: 'contact',
     Element: Contact
+  },
+  {
+    name: 'Test',
+    route: '*',
+    Element: NotFound
   },
 ];
 
@@ -429,4 +432,53 @@ export const techTestData = [
 export const alertMessages = {
   success: 'Your message has been sent',
   error: 'Error sending message, please try again'
-} 
+}
+
+export const chartData = [
+  {
+    id: 1,
+    year: 2016,
+    userGain: 80000,
+    userLost: 823
+  },
+  {
+    id: 2,
+    year: 2017,
+    userGain: 45677,
+    userLost: 345
+  },
+  {
+    id: 3,
+    year: 2018,
+    userGain: 78888,
+    userLost: 555
+  },
+  {
+    id: 4,
+    year: 2019,
+    userGain: 90000,
+    userLost: 4555
+  },
+  {
+    id: 5,
+    year: 2020,
+    userGain: 4300,
+    userLost: 234
+  }
+];
+
+export const chartStyles = {
+  labels: ['Red', 'Orange', 'Blue'],
+  datasets: [
+    {
+      label: 'Popularity of colours',
+      data: [55, 23, 96],
+      backgroundColor: [
+        'rgba(255, 255, 255, 0.6)',
+        'rgba(255, 255, 255, 0.6)',
+        'rgba(255, 255, 255, 0.6)'
+      ],
+      borderWidth: 1,
+    }
+  ]
+}

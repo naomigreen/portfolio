@@ -1,17 +1,13 @@
-import { useContext } from 'react';
-import { DataContext } from '../utils';
-import styled from 'styled-components';
-import { Header } from '../components/Header';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
-// import { NotFound } from '../pages'
-import { links } from '../data';
+import styled from 'styled-components';
+import { Header } from '../components/Header';
+import { routePaths } from '../data';
 
 const RouteContainer = () => {
-  const { theme } = useContext(DataContext)
 
   return (
     <Router>
@@ -19,10 +15,9 @@ const RouteContainer = () => {
       <Container>
         <Content>
           <Routes>
-            {links.map(({ name, route, Element }) => (
+            {routePaths.map(({ name, route, Element }) => (
               <Route key={name} path={route} element={<Element />} />
             ))}
-            {/* <Route path='*' element={<NotFound />} /> */}
           </Routes>
         </Content>
       </Container>
@@ -46,5 +41,9 @@ const Content = styled.div`
   color: ${props => props.theme.text};
   box-shadow: ${props => props.theme.contentShadow};
   background: ${props => props.theme.secondary};
+  a{
+   color: ${props => props.theme.link} ;
+  }
 `
+
 export default RouteContainer;

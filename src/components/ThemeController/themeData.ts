@@ -23,7 +23,7 @@ export const dark = {
   buttons: '#1c3956',
   hover: '#214467',
   active: '#747476',
-  link: '#00e7ef',
+  link: '#7ca7eb',
 };
 
 export const light = {
