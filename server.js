@@ -19,7 +19,7 @@ const port = process.env.PORT || 4040;
 if (process.env.NODE_ENV === 'production') {
   // app.use(enforce.HTTPS({ trustProtoHeader: true }));
   app.use(express.static(path.join(__dirname, 'client/build')));
-  app.get('/*', (req, res)=> {
+  app.get('*', (req, res)=> {
     // res.sendFile(path.join(__dirname, 'client/build/index.html'), (err)=>{
     //   if(err){
     //     res.status(500).send(err)
