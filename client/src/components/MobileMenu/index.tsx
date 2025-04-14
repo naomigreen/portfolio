@@ -116,10 +116,10 @@ const CloseButton = styled.div`
     width: 40px;
     height: 40px;
     position: absolute;
-    right: 0;
+    right: 12px;
     margin: 12px;
     display: block;
-    top: 54px;
+    top: 24px;
     fill: ${props => props.theme.navText};
   }
 `

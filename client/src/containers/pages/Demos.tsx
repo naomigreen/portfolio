@@ -52,7 +52,7 @@ const Demos = () => {
 }
 
 const Container = styled.div`
-  padding: 20px;
+  padding: 10px;
   @media (min-width: ${MIN_DESKTOP}){
     padding: 20px 40px;
   }
