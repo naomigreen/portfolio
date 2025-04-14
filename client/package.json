@@ -27,6 +27,7 @@
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
+  "proxy": "http://localhost:4040/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -38,6 +39,9 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "engines": {
+    "node": "22.x"
   },
   "browserslist": {
     "production": [
