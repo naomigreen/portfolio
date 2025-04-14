@@ -17,7 +17,7 @@
     "url": "git+https://github.com/naomigreen/fullstack-app.git"
   },
   "engines": {
-  "node": "22.x"
+  "node": "21.x"
 },
   "author": "Naomi Prescod-Green",
   "license": "ISC",
