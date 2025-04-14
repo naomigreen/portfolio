@@ -11,7 +11,7 @@ const NotFound = () => (
 
 const Container = styled.div`
   display: block;
-  color: ${props => props.theme.navText};
+  color: ${props => props.theme.text};
   text-align: center;
   margin-top: 40px;
   a{

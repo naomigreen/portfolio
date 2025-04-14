@@ -1,2 +1,2 @@
-# fullstack-app
-React, Node and D3
+# Portfolio using Node, React and D3
+
