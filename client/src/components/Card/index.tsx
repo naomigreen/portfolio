@@ -21,7 +21,7 @@ const Card = ({ text, title, image, video, divider, link }: CardProps) => {
         controls
         loop
         playsInline
-        preload="auto"
+        preload='auto'
         src={video}
       />}
       <TextContainer >

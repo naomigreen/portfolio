@@ -57,7 +57,7 @@ const DrawLineChart = (
     .attr('x2', (d: any) => xScale(d))
     .attr('y1', margin.top)
     .attr('y2', height - margin.bottom)
-    .style("stroke-width", 0.2)
+    .style('stroke-width', 0.2)
 
   SVG.selectAll('line.y-grid')
     .data(yScale.ticks())
@@ -66,7 +66,7 @@ const DrawLineChart = (
     .attr('x2', width - margin.right)
     .attr('y1', (d: any) => yScale(d))
     .attr('y2', (d: any) => yScale(d))
-    .style("stroke-width", 0.2)
+    .style('stroke-width', 0.2)
 
   SVG.append('g')
     .attr('class', 'x-axis')

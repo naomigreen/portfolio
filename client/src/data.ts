@@ -50,7 +50,7 @@ export const routePaths = [
 export const themeValues = [
   {
     theme: 'dark',
-    themeImage: "/icons/moon.png",
+    themeImage: '/icons/moon.png',
   },
   {
     theme: 'light',

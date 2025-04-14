@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useState, useRef, useCallback, useEffect } from 'react';
-import { useLocation } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 import { CrossIcon } from './crossIcon';
 import { BurgerMenuIcon } from './burgerMenuIcon';
 import NavLink from '../NavLink';
@@ -80,13 +80,13 @@ const Container = styled.div<styleProps>`
     display: none;
   }
   @media (min-width: ${MIN_TABLET}) and (max-width: ${MAX_TABLET}){
-    width: ${props => props.active === "true" ? '40%' : '0'};
+    width: ${props => props.active === 'true' ? '40%' : '0'};
     top: 0px;
     left: 0px;
   }
 
   @media (max-width: ${MAX_MOBILE}){
-    width: ${props => props.active === "true" ? '90%' : '0'};
+    width: ${props => props.active === 'true' ? '90%' : '0'};
   }
 
 `
@@ -100,7 +100,7 @@ const Overlay = styled.div<styleProps>`
   position: absolute;
   z-index: 3;
   background: #0b080978;
-  display: ${props => props.active === "true" ? 'block' : 'none'};
+  display: ${props => props.active === 'true' ? 'block' : 'none'};
 `
 
 const Theme = styled.div`

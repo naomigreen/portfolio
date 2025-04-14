@@ -28,13 +28,13 @@ const DrawBubbleChart = (
     .range([5, maxRadius])
 
   const tooltip = DIV.selectAll('span')
-    .style("display", "none")
-    .attr("class", "tooltip-content")
+    .style('display', 'none')
+    .attr('class', 'tooltip-content')
 
   const mouseover = (e: any, d: any) => {
-    tooltip.style("display", "block")
+    tooltip.style('display', 'block')
     tooltip.html(`
-      <span class: "tip-content">
+      <span class: 'tip-content'>
         Name: ${d.name}
         <br/>
         Rating: ${d.rating}/10
@@ -44,20 +44,20 @@ const DrawBubbleChart = (
         Year Played: ${d.year}
       </span>
     `)
-      .style("left", `${e.pageX + 15}px`)
-      .style("top", `${e.pageY}px`)
+      .style('left', `${e.pageX + 15}px`)
+      .style('top', `${e.pageY}px`)
       .transition()
       .duration(200)
   }
   const mouseleave = () => {
-    tooltip.style("display", 'none')
+    tooltip.style('display', 'none')
   }
 
   SVG.selectAll('circle')
     .data(data)
     .style('fill', (d: any) => colourScale(d[type]))
-    .on("mouseover", mouseover)
-    .on("mouseleave", mouseleave)
+    .on('mouseover', mouseover)
+    .on('mouseleave', mouseleave)
     .transition()
     .duration(500)
     .attr('class', 'bubble')

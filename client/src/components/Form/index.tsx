@@ -52,7 +52,7 @@ const ContactForm = () => {
         <Input name='Email' error={errors.email?.message} setValue={setValue} pattern={emailRegex} register={register} />
         <Input name='Message' error={errors.message?.message} isTextArea register={register} />
         <ActionContainer>
-          <Button type="submit" onClick={handleSubmit(onSubmit)}>Send message</Button>
+          <Button type='submit' onClick={handleSubmit(onSubmit)}>Send message</Button>
           <Links>
             {socialData.map(({ image, link }) => (
               <a key={link} href={link}>

@@ -1,10 +1,10 @@
 import store from 'store'
 
 export const chartThemes = {
-  dark: ["#24adc5", "#ba8ad2", "#216c7b", "#a167d6", "#2e8b6a", "#e06a68", "#4c608a", "#aa3884", "#a2211f", "#2283b9", "#ffafcc"],
-  light: ["#9b9b7a", "#d9ae94", "#edd392", "#f6acb1", "#d3783c", "#997b66", "#f77976", "#d29dc0", "#d17690", "#5c7e90", "#9bb589"],
-  cool: ["#bf1987", "#f77976", "#aa00ff", "#ffab00", "#455eec", "#a0e426", "#b49c2e", '	#02bc72', '#e2dc16', "#f82c2c", '#16e7e4'],
-  fairy: ["#dc7bbc", "#b68bcb", "#f59997", "#2fa8cd", "#8795e6", "#dd6565", "#5aa988", "#0b9ea9", "#509aef", "#b570ce", "#f282de",],
+  dark: ['#24adc5', '#ba8ad2', '#216c7b', '#a167d6', '#2e8b6a', '#e06a68', '#4c608a', '#aa3884', '#a2211f', '#2283b9', '#ffafcc'],
+  light: ['#9b9b7a', '#d9ae94', '#edd392', '#f6acb1', '#d3783c', '#997b66', '#f77976', '#d29dc0', '#d17690', '#5c7e90', '#9bb589'],
+  cool: ['#bf1987', '#f77976', '#aa00ff', '#ffab00', '#455eec', '#a0e426', '#b49c2e', '	#02bc72', '#e2dc16', '#f82c2c', '#16e7e4'],
+  fairy: ['#dc7bbc', '#b68bcb', '#f59997', '#2fa8cd', '#8795e6', '#dd6565', '#5aa988', '#0b9ea9', '#509aef', '#b570ce', '#f282de',],
 }
 
 export type ThemeType = typeof dark;

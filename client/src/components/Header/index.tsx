@@ -47,7 +47,7 @@ export const Header = () => {
       </Styled.HeaderContainer>
       <Styled.HeaderImage
         src={`/backgrounds/${theme}.jpg`}
-        alt="header image" />
+        alt='header image' />
     </Styled.Container>
   )
 }
