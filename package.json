@@ -1,0 +1,29 @@
+{
+  "name": "fullstack-prod",
+  "version": "1.0.0",
+  "description": "fullstack app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "dev:server": "cd client && yarn build && cd .. && yarn start",
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naomigreen/fullstack-app.git"
+  },
+  "author": "Naomi Prescod-Green",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-sslify": "^1.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

@@ -1,0 +1,290 @@
+[
+  {
+    "name": "Super Hang On",
+    "year": "1997",
+    "hours_played": 100,
+    "genre": "Racing",
+    "price": 3.50,
+    "rating": 8
+  },
+  {
+    "name": "Burn Out",
+    "year": "2017",
+    "hours_played": 100,
+    "genre": "Racing",
+    "price": 20,
+    "rating": 7
+  },
+  {
+    "name": "Need for Speed",
+    "year": "2012",
+    "hours_played": 150,
+    "genre": "Racing",
+    "price": 20,
+    "rating": 8
+  },
+  {
+    "name": "Wipe Out",
+    "year": "2018",
+    "hours_played": 200,
+    "genre": "Racing",
+    "price": 25,
+    "rating": 9
+  },
+  {
+    "name": "Mario Kart",
+    "year": "2003",
+    "hours_played": 100,
+    "genre": "Racing",
+    "price": 15,
+    "rating": 7
+  },
+  {
+    "name": "Crash Tag Team Racing",
+    "year": "2005",
+    "hours_played": 80,
+    "genre": "Racing",
+    "price": 20,
+    "rating": 8
+  },
+  {
+    "name": "Columns",
+    "year": "1995",
+    "hours_played": 70,
+    "genre": "Puzzle",
+    "price": 5,
+    "rating": 8
+  },
+  {
+    "name": "Tetris",
+    "year": "1996",
+    "hours_played": 100,
+    "genre": "Puzzle",
+    "price": 5,
+    "rating": 8
+  },
+  {
+    "name": "Among Us",
+    "year": "2023",
+    "hours_played": 75,
+    "genre": "Puzzle",
+    "price": 4,
+    "rating": 7
+  },
+  {
+    "name": "Mana Rocks",
+    "year": "2022",
+    "hours_played": 150,
+    "genre": "Puzzle",
+    "price": 0,
+    "rating": 8
+  },
+  {
+    "name": "Sonic the Hedgehog",
+    "year": "1995",
+    "hours_played": 100,
+    "genre": "Adventure",
+    "price": 5,
+    "rating": 7
+  },
+  {
+    "name": "Streets of Rage",
+    "year": "2003",
+    "hours_played": 300,
+    "genre": "Adventure",
+    "price": 10,
+    "rating": 7
+  },
+  {
+    "name": "God of War",
+    "year": "2015",
+    "hours_played": 150,
+    "genre": "Adventure",
+    "price": 30,
+    "rating": 9
+  },
+  {
+    "name": "Bart Simpson's Escape from Camp Deadly",
+    "year": "1995",
+    "hours_played": 200,
+    "genre": "Adventure",
+    "price": 5,
+    "rating": 7
+  },
+  {
+    "name": "Prince of Persia",
+    "year": "2005",
+    "hours_played": 400,
+    "genre": "Adventure",
+    "price": 40,
+    "rating": 9
+  },
+  {
+    "name": "Fable",
+    "year": "2012",
+    "hours_played": 300,
+    "genre": "Adventure",
+    "price": 25,
+    "rating": 9
+  },
+  {
+    "name": "Devil May Cry",
+    "year": "2010",
+    "hours_played": 350,
+    "genre": "Adventure",
+    "price": 25,
+    "rating": 9
+  },
+  {
+    "name": "Terraria",
+    "year": "2022",
+    "hours_played": 297,
+    "genre": "Adventure",
+    "price": 5,
+    "rating": 7
+  },
+  {
+    "name": "Metroid",
+    "year": "1996",
+    "hours_played": 350,
+    "genre": "Adventure",
+    "price": 7,
+    "rating": 9
+  },
+  {
+    "name": "Crash Bandicoot",
+    "year": "2004",
+    "hours_played": 300,
+    "genre": "Adventure",
+    "price": 20,
+    "rating": 7 
+  },
+  {
+    "name": "Ratchet and Clank",
+    "year": "2005",
+    "hours_played": 200,
+    "genre": "Adventure",
+    "price": 30,
+    "rating": 10
+  },
+  {
+    "name": "Vexx",
+    "year": "2007",
+    "hours_played": 100,
+    "genre": "Adventure",
+    "price": 15,
+    "rating": 7
+  },
+  {
+    "name": "Necesse",
+    "year": "2020",
+    "hours_played": 100,
+    "genre": "Adventure",
+    "price": 15,
+    "rating": 7
+  },
+  {
+    "name": "Theme Hospital",
+    "year": "2002",
+    "hours_played": 300,
+    "genre": "Adventure",
+    "price": 5,
+    "rating": 8
+  },
+  {
+    "name": "Hogwarts Legacy",
+    "year": "2020",
+    "hours_played": 150,
+    "genre": "Adventure",
+    "price": 50,
+    "rating": 8
+  },
+  {
+    "name": "Satisfactory",
+    "year": "2025",
+    "hours_played": 70,
+    "genre": "Adventure",
+    "price": 40,
+    "rating": 7
+  },
+  {
+    "name": "Pokemon Go",
+    "year": "2020",
+    "hours_played": 240,
+    "genre": "Adventure",
+    "price": 0,
+    "rating": 9
+  },
+  {
+    "name": "Spawn: In the Demon's Hand",
+    "year": "2000",
+    "hours_played": 300,
+    "genre": "Fighter",
+    "price": 8,
+    "rating": 8
+  },
+  {
+    "name": "Tekken",
+    "year": "2010",
+    "hours_played": 150,
+    "genre": "Fighter",
+    "price": 15,
+    "rating": 6
+  },
+  {
+    "name": "Street Fighter",
+    "year": "2000",
+    "hours_played": 100,
+    "genre": "Fighter",
+    "price": 20,
+    "rating": 7
+  },
+  {
+    "name": "DOTA 2",
+    "year": "2010",
+    "hours_played": 200,
+    "genre": "Fighter",
+    "price": 0,
+    "rating": 8
+  },
+  {
+    "name": "Gears of War",
+    "year": "2015",
+    "hours_played": 70,
+    "genre": "Shooter",
+    "price": 20,
+    "rating": 8
+  },
+  {
+    "name": "Left 4 Dead 2",
+    "year": "2017",
+    "hours_played": 50,
+    "genre": "Shooter",
+    "price": 5,
+    "rating": 7
+  },
+  {
+    "name": "Quake",
+    "year": "2016",
+    "hours_played": 50,
+    "genre": "Shooter",
+    "price": 5,
+    "rating": 7
+  },
+  {
+    "name": "TimeSplitters",
+    "year": "2007",
+    "hours_played": 150,
+    "genre": "Shooter",
+    "price": 10,
+    "rating": 8
+  },
+  {
+    "name": "HellDivers 2",
+    "year": "2025",
+    "hours_played": 200,
+    "genre": "Shooter",
+    "price": 40,
+    "rating": 9
+  }
+]
