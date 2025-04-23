@@ -10,8 +10,8 @@ export const chartThemes = {
 export type ThemeType = typeof dark;
 
 export const dark = {
-  primary: '#0e1b29',
-  secondary: '#131f2c',
+  primary: '#0e1b29f7',
+  secondary: '#0e1b29c7',
   text: '#89aad1',
   navText: '#89aad1',
   navBackground: '#1b2834ed',
@@ -28,12 +28,17 @@ export const dark = {
   success: '#20b089',
   errorBackground: '#530d0d98',
   successBackground: '#13828098',
-  buttons: 'linear-gradient(0deg, rgb(18 37 57) 0%, rgb(28 57 86) 100%)',
+  buttons: 'linear-gradient(0deg, rgb(18 37 57) 0%, rgb(40 79 118) 100%)',
   hover: 'linear-gradient(0deg, rgb(15 41 49) 0%, rgb(133 165 203) 100%)',
   active: '#747476',
   link: '#7ca7eb',
   tooltipText: '#131f2c',
-  tooltipBackground: '#89aad1'
+  tooltipBackground: '#89aad1',
+  cardBackground: '#131f2ce3',
+  cardBorder: '#324962',
+  cardHeaderColour: '#32558a',
+  logoBackground: '#122539',
+  bannerColour: '#27425f',
 };
 
 export const light = {
@@ -60,7 +65,12 @@ export const light = {
   active: '#138d71',
   link: '#0052c5',
   tooltipText: '#131f2c',
-  tooltipBackground: '#89aad1'
+  tooltipBackground: '#89aad1',
+  cardBackground: '#eee7ddc7',
+  cardBorder: '#d2beb1',
+  cardHeaderColour: '#f2e3d9',
+  logoBackground: '#122539',
+  bannerColour: '#fdf4dc',
 };
 
 export const cool = {
@@ -87,13 +97,18 @@ export const cool = {
   active: '#12cdff',
   link: '#27b1ff',
   tooltipText: '#131f2c',
-  tooltipBackground: '#89aad1'
+  tooltipBackground: '#89aad1',
+  cardBackground: '#433662d6',
+  cardBorder: '#1e6078',
+  cardHeaderColour: '#6c457e',
+  logoBackground: '#122539',
+  bannerColour: '#72456c',
 };
 
 export const fairy = {
   primary: '#d8a3e1',
   secondary: '#f9c6fa',
-  text: '#791b66',
+  text: '#550850',
   navText: '#f9c6fa',
   navBackground: '#b087b7e0',
   navShadow: '0px 4px 16px 0px rgb(73 26 74)',
@@ -114,7 +129,12 @@ export const fairy = {
   active: '#12cdff',
   link: '#27b1ff',
   tooltipText: '#131f2c',
-  tooltipBackground: '#89aad1'
+  tooltipBackground: '#89aad1',
+  cardBackground: '#a672b4c7',
+  cardBorder: '#bb94bb',
+  cardHeaderColour: '#eaadf5',
+  logoBackground: '#122539',
+  bannerColour: '#d1a6fe',
 };
 
 

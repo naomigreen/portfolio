@@ -8,14 +8,16 @@ type styleProps = {
 export const Container = styled.div`
  width: 100%;
  background: ${props => props.theme.primary};
+ position: absolute;
+ top: 0;
 `
 
 export const HeaderImage = styled.img`
   position: relative;
   object-fit: cover;
   width: 100%;
-  height: 250px;
-  box-shadow: ${props => props.theme.headerShadow};
+  height: 200px;
+  /* box-shadow: ${props => props.theme.headerShadow}; */
 `
 
 export const HeaderContainer = styled.div<styleProps>`
@@ -51,3 +53,16 @@ export const ThemesContainer = styled.div`
   }
 `
 
+export const Banner = styled.span`
+  position: relative;
+  display: block;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(#f1d881, #b59a37) 1;
+  padding: 12px;
+  bottom: 4px;
+  background: ${props => props.theme.buttons};
+  text-align: center;
+  color: ${props => props.theme.text};
+  box-shadow: ${props => props.theme.navShadow};
+`

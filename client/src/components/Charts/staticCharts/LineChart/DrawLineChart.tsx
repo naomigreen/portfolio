@@ -25,11 +25,22 @@ const DrawLineChart = (
     .domain([min, max] as any).nice()
     .range([height - margin.bottom, margin.top])
 
+  const mouseover = (e: any) => {
+    SVG.selectAll('path')
+      .style('opacity', 0.2)
+    e.target.style.opacity = 1
+  }
 
+  const mouseleave = () => {
+    SVG.selectAll('path')
+      .style('opacity', 1)
+  }
   SVG.selectAll('path')
     .data(data)
     .join('path')
     .attr('class', 'stock-line')
+    .on('mouseover', mouseover)
+    .on('mouseleave', mouseleave)
     .attr('d', line()
       .x((d: any) => xScale(new Date(d[date])))
       .y((d: any) => yScale(parseFloat(d[value])))

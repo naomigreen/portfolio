@@ -32,6 +32,9 @@ export const Header = () => {
 
   return (
     <Styled.Container>
+      <Styled.HeaderImage
+        src={`/backgrounds/${theme}.jpg`}
+        alt='header image' />
       <Styled.HeaderContainer active={displayNav ? '0' : '-96px'}>
         <MobileMenu />
         <Nav />
@@ -45,9 +48,9 @@ export const Header = () => {
           </div>
         </Styled.ThemesContainer>
       </Styled.HeaderContainer>
-      <Styled.HeaderImage
-        src={`/backgrounds/${theme}.jpg`}
-        alt='header image' />
+      <Styled.Banner>
+        Celebrating 10 years of software development in 2025! 🥳
+      </Styled.Banner>
     </Styled.Container>
   )
 }

@@ -15,7 +15,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: end;
-  width: 340px;
+  width: 300px;
   @media (max-width: ${MAX_TABLET}){
     display: none;
   }

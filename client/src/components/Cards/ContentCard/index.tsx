@@ -24,22 +24,24 @@ const Card = ({ text, title, image, video, divider, link }: CardProps) => {
         preload='auto'
         src={video}
       />}
-      <TextContainer >
-        {text}
-      </TextContainer>
+      <Content>
+        <TextContainer>
+          {text}
+        </TextContainer>
+      </Content>
       {divider && <hr />}
     </Container>
   )
 }
 
 const Container = styled.div`
-  width: calc(95% - 40px);
+  width: calc(100% - 40px);
   margin: 0 auto;
-  max-width: 800px;
-  padding: 20px 0;
+  max-width: 500px;
+  padding: 20px;
   img {
-    width: 300px;
-    margin: 40px auto 20px;
+    width: 200px;
+    margin: 0px auto 20px;
     display: block;
   }
   video{
@@ -53,6 +55,11 @@ const Container = styled.div`
   }
 `
 
+const Content = styled.div`
+  width: 100%;
+  margin: 40px auto;
+`
+
 const LinkText = styled.a`
   padding: 20px 0;
   display: block;
@@ -61,7 +68,6 @@ const LinkText = styled.a`
   color: ${props => props.theme.link}
 `
 const TextContainer = styled(Markdown)`
-  padding: 20px 0 40px;
 
   li {
     list-style-type: none;
@@ -76,10 +82,8 @@ const TextContainer = styled(Markdown)`
     color: ${props => props.theme.link};
   }
   p{
-    margin: 0;
+    margin: 12px 0 0;
   }
-  @media (max-width: MAX_MOBILE) {
-    padding: 20px 0;
-  }
+ 
 `
 export default Card

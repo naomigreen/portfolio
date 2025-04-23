@@ -32,6 +32,9 @@ const DrawBubbleChart = (
     .attr('class', 'tooltip-content')
 
   const mouseover = (e: any, d: any) => {
+    SVG.selectAll('circle')
+      .style('opacity', 0.3)
+
     tooltip.style('display', 'block')
     tooltip.html(`
       <span class: 'tip-content'>
@@ -51,6 +54,8 @@ const DrawBubbleChart = (
   }
   const mouseleave = () => {
     tooltip.style('display', 'none')
+    SVG.selectAll('circle')
+      .style('opacity', 1)
   }
 
   SVG.selectAll('circle')

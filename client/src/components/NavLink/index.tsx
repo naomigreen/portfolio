@@ -8,8 +8,12 @@ type NavLinkProps = {
 }
 const Nav = ({ link, text }: NavLinkProps) => {
   const path = useLocation().pathname
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+  }
   return (
-    <NavLinkElement active={(path === link).toString()} to={link} >{text}</NavLinkElement>
+    <NavLinkElement onClick={scrollToTop} active={(path === link).toString()} to={link} >{text}</NavLinkElement>
   )
 }
 

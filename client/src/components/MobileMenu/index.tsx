@@ -11,7 +11,6 @@ import { MAX_MOBILE, MIN_TABLET, MAX_TABLET, MIN_DESKTOP } from '../../utils';
 
 const MobileMenu = () => {
   const path = useLocation().pathname
-
   const menu = useRef<HTMLInputElement>(null)
   const [active, setActive] = useState(false)
 
@@ -76,6 +75,7 @@ const Container = styled.div<styleProps>`
   height: 100vh;
   transition: 0.7s;
   margin: 0px;
+
   @media (min-width: ${MIN_DESKTOP}){
     display: none;
   }
@@ -143,9 +143,6 @@ const Button = styled.div`
     margin: 16px;
     top: 30px;
     position: relative;
-  }
-  @media (min-width: ${MIN_DESKTOP}){
-    display: none;
   }
   @media (min-width: ${MIN_DESKTOP}){
     display: none;

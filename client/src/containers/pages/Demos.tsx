@@ -7,9 +7,10 @@ import { useFetch } from '../../hooks';
 import { groupByKey, DataContext } from '../../utils';
 import { stockValues, gdpValues, gamingValues } from '../../chartData';
 import { chartThemes } from '../../components/ThemeController/themeData';
-import BubbleRaceChart from '../../components/Charts/raceCharts/bubbleChart';
 import StaticBubble from '../../components/Charts/staticCharts/BubbleChart';
 import StaticLineChart from '../../components/Charts/staticCharts/LineChart';
+import BubbleRaceChart from '../../components/Charts/raceCharts/bubbleChart';
+import IntroCard from '../../components/Cards/IntroCard';
 
 const Demos = () => {
   const { data, loading } = useFetch('/api/data/chartData')
@@ -23,7 +24,8 @@ const Demos = () => {
 
   return (
     <Container>
-      <h4>{DemoContent.intro}</h4>
+      <h3>{DemoContent.intro}</h3>
+      <IntroCard />
       <p>{DemoContent.gamingInfo}</p>
       <StaticBubble
         data={data?.gameData}
@@ -56,11 +58,8 @@ const Container = styled.div`
   @media (min-width: ${MIN_DESKTOP}){
     padding: 20px 40px;
   }
-  p, h4{
-    padding: 0 20px;
-  }
-  p{
-    padding-bottom: 20px;
+  h3 {
+    text-align: center;
   }
 `
 
