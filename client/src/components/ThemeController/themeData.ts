@@ -20,7 +20,7 @@ export const dark = {
   contentShadow: '0px 4px 21px 0px rgb(0 0 0)',
   companyLogo: 'linear-gradient(167deg, rgb(133 165 203) 0%, rgb(133 165 203) 100%)',
   companyIcon: '#bcd8ff',
-  divider: 'linear-gradient(0deg, rgb(108 133 156) 21%, rgb(188 216 255) 100%)',
+  divider: 'linear-gradient(to right, rgb(14 27 41), rgb(188 216 255), rgb(15 28 42))',
   placeholder: '#696969',
   input: '#1c3956',
   border: '#363737',
