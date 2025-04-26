@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { ReactComponent as Icon } from './Icon.svg';
+
 const Logo = () => (
   <Container>
     <Icon />

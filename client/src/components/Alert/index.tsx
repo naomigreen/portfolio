@@ -9,7 +9,7 @@ type AlertProps = {
 const Alert = ({ success = false, display }: AlertProps) => {
 
   return (
-    <Container success={success} display={display}>
+    <Container success={success.toString()} display={display}>
       <img alt='alert' src={success ? '/icons/tick.png' : '/icons/warning.png'} />
       <p>{success ? alertMessages.success : alertMessages.error}</p>
     </Container>
@@ -17,14 +17,14 @@ const Alert = ({ success = false, display }: AlertProps) => {
 }
 
 type styleProps = {
-  success?: boolean
+  success?: string
   display?: string
 }
 const Container = styled.div<styleProps>`
   opacity: ${prop => prop.display === 'true' ? 1 : 0};
   display: grid;
   grid-template-columns: min-content 5fr;
-  background: ${props => props.success ? props.theme.successBackground : props.theme.errorBackground};
+  background: ${props => props.success === 'true' ? props.theme.successBackground : props.theme.errorBackground};
   border-radius: 4px;
   padding: 10px 12px;
   position: absolute;
@@ -34,7 +34,7 @@ const Container = styled.div<styleProps>`
   width: 474px;
   max-width: calc(100% - 48px);
   transition: opacity 1.2s ease-in-out;
-  border-left: 4px solid ${props => props.success ? props.theme.success : props.theme.error};
+  border-left: 4px solid ${props => props.success === 'true' ? props.theme.success : props.theme.error};
   img {
     width: 24px;
   }

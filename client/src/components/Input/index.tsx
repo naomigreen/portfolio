@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 type InputProps = {
   name: string
-  setValue?: any
+  setValue?: (name: string, event: any) => void
   pattern?: RegExp
   register: any
   isTextArea?: boolean
@@ -19,7 +19,7 @@ const Input = ({ name, pattern, isTextArea, setValue, error, register }: InputPr
           { required: 'is required', validate: { pattern: (value: string) => pattern?.test(value) || ' looks incorrect' } })}
         placeholder={name}
         onChange={(e) => {
-          setValue(name.toLocaleLowerCase(), e.target.value);
+          setValue && setValue(name.toLocaleLowerCase(), e.target.value);
         }} />}
       {isTextArea && <TextArea  {...register(name.toLocaleLowerCase(), { required: 'is required', })} placeholder={name} />}
       <Error error={error ? 1 : 0}> {name} {error}</Error>

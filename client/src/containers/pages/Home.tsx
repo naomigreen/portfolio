@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 import Markdown from 'markdown-to-jsx'
-import { MAX_TABLET, MAX_MOBILE } from '../../utils';
+import { MAX_MOBILE } from '../../utils';
 import { workData, desksImages, intro } from '../../data';
 import ImageCard from '../../components/Cards/ImageCard';
 
 const Home = () => {
-
   return (
     <Container>
       <Markdown>{intro}</Markdown>

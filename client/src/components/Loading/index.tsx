@@ -3,9 +3,9 @@ import styled from 'styled-components';
 type Props = {
   width?: number
 }
-const Loading = ({ width = 80 }) => {
+const Loading = ({ width = 80 }: Props) => {
   return (
-    <LoadingIcon src='/icons/loading.svg' alt={'loading icon'} width={width} />
+    <LoadingIcon src='/icons/loading.svg' alt='loading icon' width={width} />
   )
 }
 

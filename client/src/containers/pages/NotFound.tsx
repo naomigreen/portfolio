@@ -1,10 +1,10 @@
-import { Link } from 'react-router-dom';
+// import { NavLink } from 'react-router';
 import styled from 'styled-components';
 
 const NotFound = () => (
   <Container>
-    <img src='backgrounds/genie.gif' />
-    <h2>Oh no, page not found! Please return to the <Link to='/'>home page</Link></h2>
+    <img src='backgrounds/genie.gif' alt='genie error' />
+    <h2>Oh no, page not found! Please return to the <a href='/'>home page</a></h2>
   </Container>
 )
 

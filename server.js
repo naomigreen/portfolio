@@ -6,6 +6,8 @@ const app = express();
 const stockData =require('./data/stockData.json')
 const gdpData = require('./data/gdpData.json')
 const gameData = require('./data/gamingData.json')
+const util= require('util');
+const encoder = new util.TextEncoder('utf-8');
 
 const port = process.env.PORT || 4040;
 

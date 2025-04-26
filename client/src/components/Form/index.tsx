@@ -1,85 +1,33 @@
-import { useState, useEffect } from 'react';
-import Loading from '../Loading';
-import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
-import { usePostForm } from '../../hooks';
-import Alert from '../Alert';
 import { emailRegex, nameRegex } from '../../utils';
 import { socialData } from '../../data';
 import Input from '../Input';
 
-export type FormDataProps = {
-  name: string,
-  email: string,
-  message: string
-};
-
-const ContactForm = () => {
-  const [displayAlert, setDisplayAlert] = useState(false)
-  const { postState, postForm } = usePostForm()
-  const { error, success, loading } = postState
-
-  const { register, handleSubmit, setValue, formState: { errors }, reset } = useForm<FormDataProps>({
-    mode: 'onBlur'
-  });
-
-  const onSubmit = async (data: FormDataProps) => {
-    postForm(data)
-  };
-
-  useEffect(() => {
-    if (success) {
-      reset()
-      setDisplayAlert(true)
-    }
-    else if (error) {
-      setDisplayAlert(true)
-    }
-    setTimeout(() => {
-      setDisplayAlert(false)
-    }, 5000)
-
-  }, [success, error]);
-
+type Props = {
+  onSubmit: () => void
+  errors: any
+  setValue: any
+  register: any
+}
+const ContactForm = ({ onSubmit, errors, setValue, register }: Props) => {
   return (
-    <Container>
-      <Alerts>
-        <Alert success={success} display={displayAlert.toString()} />
-        {loading && <Loading />}
-      </Alerts>
-      <form>
-        <Input name='Name' error={errors.name?.message} setValue={setValue} pattern={nameRegex} register={register} />
-        <Input name='Email' error={errors.email?.message} setValue={setValue} pattern={emailRegex} register={register} />
-        <Input name='Message' error={errors.message?.message} isTextArea register={register} />
-        <ActionContainer>
-          <Button type='submit' onClick={handleSubmit(onSubmit)}>Send message</Button>
-          <Links>
-            {socialData.map(({ image, link }) => (
-              <a key={link} href={link}>
-                <img width={40} height={40} alt='image' src={image} />
-              </a>
-            ))}
-          </Links>
-        </ActionContainer>
-      </form>
-    </Container>
+    <form onSubmit={onSubmit}>
+      <Input name='Name' error={errors.name?.message} setValue={setValue} pattern={nameRegex} register={register} />
+      <Input name='Email' error={errors.email?.message} setValue={setValue} pattern={emailRegex} register={register} />
+      <Input name='Message' error={errors.message?.message} isTextArea register={register} />
+      <ActionContainer>
+        <Button type='submit'>Send message</Button>
+        <Links>
+          {socialData.map(({ image, link }) => (
+            <a key={link} href={link}>
+              <img width={40} height={40} alt='social media icon' src={image} />
+            </a>
+          ))}
+        </Links>
+      </ActionContainer>
+    </form>
   )
 }
-
-const Container = styled.div`
-  width: 500px;
-  max-width: 95%;
-  margin: 0 auto;
-  form{
-    width: 100%;
-  }
-`
-
-const Alerts = styled.div`
-  max-width: 95%;
-  min-height: 60px;
-`
-
 
 const ActionContainer = styled.div`
   width: 100%;

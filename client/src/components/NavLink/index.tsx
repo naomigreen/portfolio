@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router';
 
 type NavLinkProps = {
   link: string

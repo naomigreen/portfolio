@@ -17,7 +17,6 @@ export const HeaderImage = styled.img`
   object-fit: cover;
   width: 100%;
   height: 200px;
-  /* box-shadow: ${props => props.theme.headerShadow}; */
 `
 
 export const HeaderContainer = styled.div<styleProps>`

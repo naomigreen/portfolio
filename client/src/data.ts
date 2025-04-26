@@ -316,8 +316,8 @@ export const workData = [
   },
   {
     text: bbc,
-    logo: '/logos/bbc.png',
-    lightLogo: '/logos/bbc.png',
+    logo: '/logos/bbc.jpg',
+    lightLogo: '/logos/bbc.jpg',
     alt: 'BBC logo',
     link: 'https://www.bbc.co.uk/aboutthebbc',
     divider: true

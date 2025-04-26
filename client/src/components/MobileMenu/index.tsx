@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useState, useRef, useCallback, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router';
 import { CrossIcon } from './crossIcon';
 import { BurgerMenuIcon } from './burgerMenuIcon';
 import NavLink from '../NavLink';

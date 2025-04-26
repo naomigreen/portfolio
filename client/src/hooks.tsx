@@ -1,7 +1,7 @@
 import emailjs from '@emailjs/browser'
 import { useState, useEffect } from 'react'
 import { scaleOrdinal } from 'd3'
-import { FormDataProps } from './components/Form'
+import { FormDataProps } from './types'
 import { groupByKey } from './utils'
 import { dataGrids } from './chartData'
 import { stockCondition } from './utils'
@@ -64,10 +64,9 @@ export const useFetch = (url: string) => {
 
 export const useYearLoop = (min: number, max: number, duration: number, yearStep: number) => {
   const [year, setYear] = useState(min)
-  let interval: any
 
   useEffect(() => {
-    interval = setInterval(() => {
+    const interval = setInterval(() => {
       if (year < max) {
         setYear(year + yearStep);
       } else {
