@@ -48,11 +48,6 @@ export const routePaths = [
     Element: Contact,
   },
   {
-    name: 'test',
-    route: 'test',
-    Element: Test,
-  },
-  {
     name: 'not-found',
     route: '*',
     Element: NotFound,
