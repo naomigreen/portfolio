@@ -22,9 +22,7 @@ describe('Form Component', () => {
   }
 
   it('should render empty input fields', () => {
-    const { getByTestId, getByPlaceholderText } = render(<ContactForm {...props} />)
-
-    // const name = getByTestId('name-input')
+    const { getByPlaceholderText } = render(<ContactForm {...props} />)
 
     const name = getByPlaceholderText('Name');
     const email = getByPlaceholderText('Email')

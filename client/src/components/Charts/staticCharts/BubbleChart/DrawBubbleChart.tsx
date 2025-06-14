@@ -1,16 +1,16 @@
-import { GamingTypes, GamingCustomValues } from '../../../../types';
-import { scaleLinear, scaleTime, scaleSqrt, axisBottom, axisLeft } from 'd3';
+import { GamingTypes, GamingCustomValues } from '../../../../types'
+import { scaleLinear, scaleTime, scaleSqrt, axisBottom, axisLeft } from 'd3'
 
 const DrawBubbleChart = (
   SVG: any,
   data: GamingTypes[],
   customValues: GamingCustomValues,
-  DIV: any,
+  DIV: any
 ) => {
   const { width, height, margin, colourScale, chartValues } = customValues
   const { xValue, yValue, rValue, type, start, end } = chartValues
 
-  const values = data.map((d: any) => (parseFloat(d[rValue])))
+  const values = data.map((d: any) => parseFloat(d[rValue]))
   const maxValue = Math.max(...values)
   const minValue = Math.min(...values)
   const maxRadius = 25
@@ -23,20 +23,20 @@ const DrawBubbleChart = (
     .domain([0, 500])
     .range([height - margin.bottom, margin.top])
 
-  const rScale = scaleSqrt()
-    .domain([minValue, maxValue])
-    .range([5, maxRadius])
+  const rScale = scaleSqrt().domain([minValue, maxValue]).range([5, maxRadius])
 
   const tooltip = DIV.selectAll('span')
     .style('display', 'none')
     .attr('class', 'tooltip-content')
 
   const mouseover = (e: any, d: any) => {
-    SVG.selectAll('circle')
-      .style('opacity', 0.3)
+    SVG.selectAll('circle').style('opacity', 0.3)
+    e.target.style.opacity = 1
 
     tooltip.style('display', 'block')
-    tooltip.html(`
+    tooltip
+      .html(
+        `
       <span class: 'tip-content'>
         Name: ${d.name}
         <br/>
@@ -46,7 +46,8 @@ const DrawBubbleChart = (
         <br/> 
         Year Played: ${d.year}
       </span>
-    `)
+    `
+      )
       .style('left', `${e.pageX + 15}px`)
       .style('top', `${e.pageY}px`)
       .transition()
@@ -54,8 +55,7 @@ const DrawBubbleChart = (
   }
   const mouseleave = () => {
     tooltip.style('display', 'none')
-    SVG.selectAll('circle')
-      .style('opacity', 1)
+    SVG.selectAll('circle').style('opacity', 1)
   }
 
   SVG.selectAll('circle')

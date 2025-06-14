@@ -1,21 +1,28 @@
-import { Home, NotFound, Demos, Contact, Projects } from './containers/pages';
+import {
+  Home,
+  NotFound,
+  Demos,
+  Contact,
+  Test,
+  Projects,
+} from './containers/pages'
 
 export const NavLinkData = [
   {
     link: '/',
-    text: 'Home'
+    text: 'Home',
   },
   {
     link: '/projects',
-    text: 'Projects'
+    text: 'Projects',
   },
   {
     link: '/demos',
-    text: 'Demos'
+    text: 'Demos',
   },
   {
     link: '/contact',
-    text: 'Contact'
+    text: 'Contact',
   },
 ]
 
@@ -23,30 +30,34 @@ export const routePaths = [
   {
     name: 'Home',
     route: '/',
-    Element: Home
+    Element: Home,
   },
   {
     name: 'Projects',
     route: 'projects',
-    Element: Projects
+    Element: Projects,
   },
   {
     name: 'Demos',
     route: 'demos',
-    Element: Demos
+    Element: Demos,
   },
   {
     name: 'Contact',
     route: 'contact',
-    Element: Contact
+    Element: Contact,
+  },
+  {
+    name: 'test',
+    route: 'test',
+    Element: Test,
   },
   {
     name: 'not-found',
     route: '*',
-    Element: NotFound
+    Element: NotFound,
   },
-];
-
+]
 
 export const cardIcons = {
   top: [
@@ -80,7 +91,7 @@ export const cardIcons = {
       alt: 'c++ logo',
       src: '/icons/c++.png',
     },
-  ]
+  ],
 }
 
 export const themeValues = [
@@ -95,13 +106,13 @@ export const themeValues = [
   {
     theme: 'cool',
     themeImage: '/icons/cool.png',
-  }
+  },
 ]
 
 export const Titles = {
   projects: 'Project History',
   aboutMe: 'About Me',
-  contact: 'Contact Me'
+  contact: 'Contact Me',
 }
 export const DemoContent = {
   intro: `In this section I'll demo some of the components I've created over the years`,
@@ -110,14 +121,14 @@ export const DemoContent = {
   Naomi values good teamwork with the ability to communicate and collaborate well with others.`,
   gamingInfo: `Here's a bubble chart of all my favourite video games over the last 30 years`,
   lineInfo: `Line chart with stock data from the last 10 years`,
-  raceChart: `GDP race bubble chart with data from 1952-2007`
+  raceChart: `GDP race bubble chart with data from 1952-2007`,
 }
 
 export const intro = `
   Hello 👋, I'm Naomi Prescod-Green. A Senior Software Developer from London. 
 
   I'm currently celebrating ten years of software development and thought it would fun to update my portfolio for the occasion.
-`;
+`
 
 const virgin = `
   <u>Role (main project)</u>
@@ -145,7 +156,7 @@ const virgin = `
 
   <u>Technologies (legacy solo project)</u> 
   Vanilla.js, HTML, CSS, Java, XML, AEM
-`;
+`
 
 const bbc = `
   <u>Role</u>
@@ -176,7 +187,7 @@ const intrepid = `
 
   <u>Technologies</u> 
   React, React Hooks, TypeScript, REST API, C#, Sass, JSX, JSON, Jest, React hook form, React testing library
-`;
+`
 
 const hackney = `
 <u>Role</u>
@@ -190,7 +201,7 @@ const hackney = `
 
 <u>Technologies</u> 
 React, React Hooks, Next.js, REST API, Sass, JSX, JSO, Jest, React hook form, React testing library, Storybook, Cypress
-`;
+`
 
 const sky = `
   <u>Role</u>
@@ -205,7 +216,7 @@ const sky = `
 
   <u>Technologies</u>
   React, React Hooks, Redux, REST API, Jest, Enzyme, Sass, Emotions, JSX, JSON
-`;
+`
 
 const rolls = `
   <u>Role</u>
@@ -221,7 +232,7 @@ const rolls = `
 
   <u>Technologies</u>
   React, Redux, REST API, Jest, Enzyme, Sass, JSX, JSON, CSS3
-`;
+`
 
 const clearmatics = `
   <u>Role (solo project)</u>
@@ -242,7 +253,7 @@ const clearmatics = `
 
   <u>Technologies</u>
   React, Redux, REST API, Jest, HTML5, Enzyme, Sass, Drizzle, JSX, JSON, CSS3
-`;
+`
 
 const monetate = `
   <u>Role</u>
@@ -258,8 +269,7 @@ const monetate = `
 
   <u>Technologies</u>
   React, Redux, Angular, Vanilla.js, REST API, Jest, Enzyme, JQuery, HTML5, JSON, CSS3, Ajax
-`;
-
+`
 
 const times = `
   <u>Role</u>
@@ -273,37 +283,39 @@ const times = `
 
 
   <u>Technologies</u> Vanilla.js, REST API, Jest, Enzyme, HTML5, JSON, CSS3, Jasmine
-`;
-
+`
 
 export const socialData = [
-  { image: '/logos/linkedin.png', link: 'https://www.linkedin.com/in/naomi-presod-green-3299868a/' },
+  {
+    image: '/logos/linkedin.png',
+    link: 'https://www.linkedin.com/in/naomi-presod-green-3299868a/',
+  },
   { image: '/logos/github.png', link: 'https://github.com/naomigreen' },
   { image: '/logos/code.png', link: 'https://github.com/naomigreen/portfolio' },
-];
+]
 
 export const desksImages = [
   {
     image: 'https://naomi-assets.s3.eu-west-2.amazonaws.com/times-desk.jpg',
     alt: 'Time office desk',
-    year: 2015
+    year: 2015,
   },
   {
     image: 'https://naomi-assets.s3.eu-west-2.amazonaws.com/monetate-desk.jpg',
     alt: 'Monetate office desk',
-    year: 2017
+    year: 2017,
   },
   {
     image: 'https://naomi-assets.s3.eu-west-2.amazonaws.com/clear-desk.jpg',
     alt: 'Cleamatics office desk',
-    year: 2019
+    year: 2019,
   },
   {
     image: 'https://naomi-assets.s3.eu-west-2.amazonaws.com/office.jpg',
     alt: 'Home office desk',
-    year: 2025
+    year: 2025,
   },
-];
+]
 
 export const workData = [
   {
@@ -312,7 +324,7 @@ export const workData = [
     lightLogo: '/logos/virgin.png',
     alt: 'Virgin Atlantic logo',
     link: 'https://corporate.virginatlantic.com/gb/en/our-story.html',
-    divider: true
+    divider: true,
   },
   {
     text: bbc,
@@ -320,7 +332,7 @@ export const workData = [
     lightLogo: '/logos/bbc.jpg',
     alt: 'BBC logo',
     link: 'https://www.bbc.co.uk/aboutthebbc',
-    divider: true
+    divider: true,
   },
   {
     text: intrepid,
@@ -328,7 +340,7 @@ export const workData = [
     lightLogo: '/logos/intrepid.png',
     alt: 'Intrepid logo',
     link: 'https://www.beintrepid.co.uk/',
-    divider: true
+    divider: true,
   },
   {
     text: hackney,
@@ -336,7 +348,7 @@ export const workData = [
     logo: '/logos/hackneyDark.png',
     alt: 'Hackney logo',
     link: 'https://hackney.gov.uk/',
-    divider: true
+    divider: true,
   },
   {
     text: sky,
@@ -344,7 +356,7 @@ export const workData = [
     lightLogo: '/logos/sky.png',
     alt: 'Sky logo',
     link: 'https://www.skygroup.sky/our-company',
-    divider: true
+    divider: true,
   },
   {
     text: rolls,
@@ -352,7 +364,7 @@ export const workData = [
     lightLogo: 'logos/rolls.png',
     alt: 'Rolls Royce logo',
     link: 'https://www.rolls-royce.com/about.aspx',
-    divider: true
+    divider: true,
   },
   {
     text: clearmatics,
@@ -360,7 +372,7 @@ export const workData = [
     logo: '/logos/clearmaticsDark.png',
     alt: 'Clearmatics logo',
     link: 'https://www.clearmatics.com/about/',
-    divider: true
+    divider: true,
   },
   {
     text: monetate,
@@ -368,7 +380,7 @@ export const workData = [
     lightLogo: 'logos/monetate.png',
     alt: 'Monetate logo',
     link: 'https://monetate.com/about/',
-    divider: true
+    divider: true,
   },
   {
     text: times,
@@ -378,9 +390,9 @@ export const workData = [
     link: 'https://www.news.co.uk/what-we-do/',
     divider: false,
   },
-];
+]
 
 export const alertMessages = {
   success: 'Your message has been sent',
-  error: 'Error sending message, please try again'
+  error: 'Error sending message, please try again',
 }

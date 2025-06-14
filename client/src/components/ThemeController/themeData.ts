@@ -137,7 +137,6 @@ export const fairy = {
   bannerColour: '#d1a6fe',
 };
 
-
 export const themes = {
   dark,
   light,
