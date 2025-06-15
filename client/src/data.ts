@@ -1,11 +1,4 @@
-import {
-  Home,
-  NotFound,
-  Demos,
-  Contact,
-  Test,
-  Projects,
-} from './containers/pages'
+import { Home, NotFound, Demos, Contact, Projects } from './containers/pages'
 
 export const NavLinkData = [
   {
