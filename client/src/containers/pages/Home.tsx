@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 import Markdown from 'markdown-to-jsx'
-import { MAX_MOBILE } from '../../utils';
-import { workData, desksImages, intro } from '../../data';
-import ImageCard from '../../components/Cards/ImageCard';
+import { MAX_MOBILE } from '../../utils'
+import { workData, desksImages, intro } from '../../data'
+import ImageCard from '../../components/Cards/ImageCard'
 
 const Home = () => {
   return (
@@ -10,12 +10,12 @@ const Home = () => {
       <Markdown>{intro}</Markdown>
       <ImageContainer>
         {desksImages.map(({ image, alt, year }) => (
-          <ImageCard src={image} alt={alt} text={year} />
+          <ImageCard key={image} src={image} alt={alt} text={year} />
         ))}
       </ImageContainer>
       <LogoSection>
         {workData.map(({ logo, alt }) => (
-          <CompanyLogo src={logo} alt={alt} />
+          <CompanyLogo key={logo} src={logo} alt={alt} />
         ))}
       </LogoSection>
     </Container>
@@ -26,8 +26,8 @@ export default Home
 
 const Container = styled.div`
   padding: 40px;
-  @media (max-width: ${MAX_MOBILE}){
-      padding: 10px;
+  @media (max-width: ${MAX_MOBILE}) {
+    padding: 10px;
   }
 `
 
@@ -36,7 +36,7 @@ const ImageContainer = styled.div`
   display: grid;
   grid-template-columns: 3fr 3fr;
   grid-gap: 20px;
-  @media (max-width: ${MAX_MOBILE}){
+  @media (max-width: ${MAX_MOBILE}) {
     grid-gap: 8px;
   }
 `
@@ -47,7 +47,7 @@ const LogoSection = styled.div`
 
 const CompanyLogo = styled.img`
   padding: 11px;
-  background: ${props => props.theme.logoBackground};
+  background: ${(props) => props.theme.logoBackground};
   border-radius: 8px;
   object-fit: cover;
   height: 31px;

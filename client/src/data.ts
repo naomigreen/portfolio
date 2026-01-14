@@ -284,22 +284,22 @@ export const socialData = [
 
 export const desksImages = [
   {
-    image: 'https://naomi-assets.s3.eu-west-2.amazonaws.com/times-desk.jpg',
+    image: '/backgrounds/2015-desk.jpg',
     alt: 'Time office desk',
     year: 2015,
   },
   {
-    image: 'https://naomi-assets.s3.eu-west-2.amazonaws.com/monetate-desk.jpg',
+    image: '/backgrounds/2017-desk.jpg',
     alt: 'Monetate office desk',
     year: 2017,
   },
   {
-    image: 'https://naomi-assets.s3.eu-west-2.amazonaws.com/clear-desk.jpg',
+    image: '/backgrounds/2019-desk.jpg',
     alt: 'Cleamatics office desk',
     year: 2019,
   },
   {
-    image: 'https://naomi-assets.s3.eu-west-2.amazonaws.com/office.jpg',
+    image: '/backgrounds/2025-desk.jpg',
     alt: 'Home office desk',
     year: 2025,
   },
