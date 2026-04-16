@@ -115,7 +115,22 @@ export const DemoContent = {
 export const intro = `
   Hello 👋, I'm Naomi Prescod-Green. A Senior Software Developer from London. 
 
-  I'm currently celebrating ten years of software development and thought it would fun to update my portfolio for the occasion.
+  I'm currently celebrating eleven years of software development and thought it would fun to update my portfolio for the occasion.
+`
+const vm = `
+  <u>Role</u>
+  * Working across multiple projects, both in a team and solo.
+  * Creating new components
+  * Unit tests
+  * Adding Google analytics
+  * Add Braze analytics
+  * Code reviews
+  * Deployments to test, int, staging
+  * Feature demonstrations.
+
+
+  <u>Technologies</u>
+  React, TypeScript, Next.js, React testing library, Vitest, Storybook, Story Blok and Braze.
 `
 
 const virgin = `
@@ -284,14 +299,9 @@ export const socialData = [
 
 export const desksImages = [
   {
-    image: '/backgrounds/2015-desk.jpg',
-    alt: 'Time office desk',
-    year: 2015,
-  },
-  {
-    image: '/backgrounds/2017-desk.jpg',
-    alt: 'Monetate office desk',
-    year: 2017,
+    image: '/backgrounds/2025-desk.jpg',
+    alt: 'Home office desk',
+    year: 2026,
   },
   {
     image: '/backgrounds/2019-desk.jpg',
@@ -299,13 +309,26 @@ export const desksImages = [
     year: 2019,
   },
   {
-    image: '/backgrounds/2025-desk.jpg',
-    alt: 'Home office desk',
-    year: 2025,
+    image: '/backgrounds/2017-desk.jpg',
+    alt: 'Monetate office desk',
+    year: 2017,
+  },
+  {
+    image: '/backgrounds/2015-desk.jpg',
+    alt: 'Time office desk',
+    year: 2015,
   },
 ]
 
 export const workData = [
+  {
+    text: vm,
+    logo: '/logos/vm-o2.svg',
+    lightLogo: '/logos/vm-o2.svg',
+    alt: 'Virgin Media Logo',
+    link: 'https://corporate.virginatlantic.com/gb/en/our-story.html',
+    divider: true,
+  },
   {
     text: virgin,
     logo: '/logos/virginDark.png',

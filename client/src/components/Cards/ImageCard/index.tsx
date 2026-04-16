@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { MAX_MOBILE, MAX_TABLET } from '../../../utils';
+import styled from 'styled-components'
+import { MAX_MOBILE, MAX_TABLET } from '../../../utils'
 
 type props = {
   src: string
@@ -17,7 +17,9 @@ const ImageCard = ({ src, alt, text }: props) => {
 }
 
 const Container = styled.div`
-position: relative;
+  position: relative;
+  display: flex;
+  justify-content: center;
 `
 
 const Image = styled.img`
@@ -27,10 +29,10 @@ const Image = styled.img`
   width: 100%;
   height: 300px;
   max-height: 100%;
-  @media (max-width: ${MAX_TABLET}){
+  @media (max-width: ${MAX_TABLET}) {
     height: 244px;
   }
-  @media (max-width: ${MAX_MOBILE}){
+  @media (max-width: ${MAX_MOBILE}) {
     height: 150px;
   }
 `
@@ -40,7 +42,5 @@ const Text = styled.span`
   z-index: 2;
   font-size: 40px;
   color: white;
-  display: flex;
-  justify-self: anchor-center;
 `
 export default ImageCard

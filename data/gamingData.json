@@ -4,7 +4,7 @@
     "year": "1997",
     "hours_played": 100,
     "genre": "Racing",
-    "price": 3.50,
+    "price": 3.5,
     "rating": 8
   },
   {
@@ -157,7 +157,7 @@
     "hours_played": 300,
     "genre": "Adventure",
     "price": 20,
-    "rating": 7 
+    "rating": 7
   },
   {
     "name": "Ratchet and Clank",
@@ -286,5 +286,13 @@
     "genre": "Shooter",
     "price": 40,
     "rating": 9
+  },
+  {
+    "name": "Balatro",
+    "year": "2026",
+    "hours_played": 150,
+    "genre": "Puzzle",
+    "price": 10,
+    "rating": 8
   }
 ]

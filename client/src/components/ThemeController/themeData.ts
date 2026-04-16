@@ -87,7 +87,7 @@ export const dark = {
   cardBackground: '#131f2ce3',
   cardBorder: '#324962',
   cardHeaderColour: '#32558a',
-  logoBackground: '#122539',
+  logoBackground: 'linear-gradient(0deg, rgb(16 32 53) 0%, rgb(32 65 97) 100%)',
   bannerColour: '#27425f',
 }
 
@@ -120,14 +120,15 @@ export const light = {
   cardBackground: '#eee7ddc7',
   cardBorder: '#d2beb1',
   cardHeaderColour: '#f2e3d9',
-  logoBackground: '#122539',
+  logoBackground:
+    'linear-gradient(0deg, rgb(196 192 181) 0%, rgb(235 231 219) 100%)',
   bannerColour: '#fdf4dc',
 }
 
 export const cool = {
   primary: '#0a1319d3',
   secondary:
-    'linear-gradient(0deg, rgba(17, 120, 117, 0.78) 0%, rgba(43, 106, 152, 0.824) 35%, rgba(101, 17, 75, 0.843) 100%)',
+    'linear-gradient(0deg, rgb(12 79 77 / 78%) 0%, rgb(14 39 58 / 82%) 35%, rgba(101, 17, 75, 0.843) 100%)',
   text: '#77f9ff',
   navText: '#e959e1',
   navBackground: '#090828c4',
@@ -154,7 +155,7 @@ export const cool = {
   cardBackground: '#433662d6',
   cardBorder: '#1e6078',
   cardHeaderColour: '#6c457e',
-  logoBackground: '#122539',
+  logoBackground: 'linear-gradient(0deg, rgb(10 39 48) 0%, rgb(20 79 84) 100%)',
   bannerColour: '#72456c',
 }
 
@@ -187,7 +188,8 @@ export const fairy = {
   cardBackground: '#a672b4c7',
   cardBorder: '#bb94bb',
   cardHeaderColour: '#eaadf5',
-  logoBackground: '#122539',
+  logoBackground:
+    'linear-gradient(0deg, rgb(187 128 203) 0%, rgb(229 181 230) 100%)',
   bannerColour: '#d1a6fe',
 }
 
