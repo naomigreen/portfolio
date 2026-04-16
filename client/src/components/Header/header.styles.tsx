@@ -15,7 +15,7 @@ export const HeaderImage = styled.img`
   position: relative;
   object-fit: cover;
   width: 100%;
-  height: 300px;
+  height: 350px;
 `
 
 export const HeaderContainer = styled.div<styleProps>`

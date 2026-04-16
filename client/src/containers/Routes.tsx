@@ -38,7 +38,7 @@ const Container = styled.div`
 
 const Content = styled.div`
   max-width: 100%;
-  margin: 342px auto 40px;
+  margin: 382px auto 40px;
   width: 1000px;
   min-height: 700px;
   border-radius: 8px;

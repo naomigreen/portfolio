@@ -104,9 +104,9 @@ export const Titles = {
 }
 export const DemoContent = {
   intro: `In this section I'll demo some of the components I've created over the years`,
-  cardText: `With ten years experience, seven spent contracting, this developer has the ability to hit the ground running and adapts well to new environments. 
+  cardText: `With over eleven years experience, eight spent contracting, this developer has the ability to hit the ground running and adapts well to new environments. 
   <br/>
-  Naomi values good teamwork with the ability to communicate and collaborate well with others.`,
+  Having worked on multiple solo and team projects, Naomi has the ability to communicate and collaborate well with others, from Frontend, Backend, Dev Ops, Analytics, Product and stakeholders, she understands their goals and requirements on a projects`,
   gamingInfo: `Here's a bubble chart of all my favourite video games over the last 30 years`,
   lineInfo: `Line chart with stock data from the last 10 years`,
   raceChart: `GDP race bubble chart with data from 1952-2007`,
@@ -121,7 +121,7 @@ const vm = `
   <u>Role</u>
   * Working across multiple projects, both in a team and solo.
   * Creating new components
-  * Unit tests
+  * Writing unit tests
   * Adding Google analytics
   * Add Braze analytics
   * Code reviews
@@ -138,7 +138,7 @@ const virgin = `
   * Creating new components
   * Pair programming
   * Code reviews
-  * Unit tests
+  * Writing unit tests
   * End to end tests
   * Deployments to test, staging and production environments
   * Feature demonstrations.
@@ -166,7 +166,7 @@ const bbc = `
   * Creating new components
   * Pair programming
   * Code reviews
-  * Unit tests
+  * Writing unit tests
   * Upgrading dependencies
   * Code refactoring   
   * Custom Slack bot
@@ -243,7 +243,7 @@ const clearmatics = `
   * Creating test data to populate components
   * Live REST API implementation and testing
   * Error handling
-  * Unit tests and documentation
+  * Writing unit tests and documentation
   * Browser testing
   * Table components
   * UI design
