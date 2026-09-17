@@ -130,6 +130,7 @@ const vm = `
 
 
   <u>Technologies</u>
+  
   React, TypeScript, Next.js, React testing library, Vitest, Storybook, Story Blok and Braze.
 `
 
@@ -159,7 +160,7 @@ const virgin = `
 
 
   <u>Technologies</u> 
-  
+
   Vanilla.js, HTML, CSS, Java, XML, AEM
 
 `
