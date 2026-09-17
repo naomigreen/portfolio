@@ -144,8 +144,8 @@ const virgin = `
   * Feature demonstrations.
 
 
-  <u>Technologies (main project)</u>
-  React, TypeScript, Next.js, React testing library, Apollo client, Storybook, Jenkins, Cypress.
+  <u>Technologies</u>
+  React, TypeScript, Next.js, React testing library, GraphQL, Apollo client, Storybook, Jenkins, Cypress.
 
   <br/>
   <u>Role (legacy solo project)</u>
@@ -157,8 +157,9 @@ const virgin = `
   * Feature demonstrations.
 
 
-  <u>Technologies (legacy solo project)</u> 
+  <u>Technologies</u> 
   Vanilla.js, HTML, CSS, Java, XML, AEM
+
 `
 
 const bbc = `
@@ -189,6 +190,7 @@ const intrepid = `
 
 
   <u>Technologies</u> 
+
   React, React Hooks, TypeScript, REST API, C#, Sass, JSX, JSON, Jest, React hook form, React testing library
 `
 
@@ -203,6 +205,7 @@ const hackney = `
 
 
 <u>Technologies</u> 
+
 React, React Hooks, Next.js, REST API, Sass, JSX, JSO, Jest, React hook form, React testing library, Storybook, Cypress
 `
 
@@ -218,6 +221,7 @@ const sky = `
 
 
   <u>Technologies</u>
+
   React, React Hooks, Redux, REST API, Jest, Enzyme, Sass, Emotions, JSX, JSON
 `
 
@@ -234,6 +238,7 @@ const rolls = `
 
 
   <u>Technologies</u>
+
   React, Redux, REST API, Jest, Enzyme, Sass, JSX, JSON, CSS3
 `
 
@@ -255,6 +260,7 @@ const clearmatics = `
 
 
   <u>Technologies</u>
+
   React, Redux, REST API, Jest, HTML5, Enzyme, Sass, Drizzle, JSX, JSON, CSS3
 `
 
@@ -271,6 +277,7 @@ const monetate = `
 
 
   <u>Technologies</u>
+
   React, Redux, Angular, Vanilla.js, REST API, Jest, Enzyme, JQuery, HTML5, JSON, CSS3, Ajax
 `
 
@@ -285,7 +292,9 @@ const times = `
   * Feature demonstrations
 
 
-  <u>Technologies</u> Vanilla.js, REST API, Jest, Enzyme, HTML5, JSON, CSS3, Jasmine
+  <u>Technologies</u> 
+  
+  Vanilla.js, REST API, Jest, Enzyme, HTML5, JSON, CSS3, Jasmine
 `
 
 export const socialData = [
