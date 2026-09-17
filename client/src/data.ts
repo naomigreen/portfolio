@@ -145,6 +145,7 @@ const virgin = `
 
 
   <u>Technologies</u>
+
   React, TypeScript, Next.js, React testing library, GraphQL, Apollo client, Storybook, Jenkins, Cypress.
 
   <br/>
@@ -158,6 +159,7 @@ const virgin = `
 
 
   <u>Technologies</u> 
+  
   Vanilla.js, HTML, CSS, Java, XML, AEM
 
 `
